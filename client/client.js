@@ -28,7 +28,7 @@ app.use((req, res, next) => {
   });
 
 app.use(session({
-    secret: 'ameriSave2022',
+    secret: '1234',
     resave: true,
     saveUninitialized: false
   }));
