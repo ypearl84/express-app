@@ -8,7 +8,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const port = process.env.port || 3001;  
 
-app.use('/api', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: false, secure: false }));
+app.use('/api', createProxyMiddleware({ target: 'http://localhost:5000', changeOrigin: true, secure: false }));
   
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
